@@ -16,10 +16,58 @@ html,
 }
 
 .content-area {
-  background: lavender;
-  background-color: lavender;
-  .columns {
-    padding-bottom: 600px;
+  .message {
+    background: #ffe14f;
+    background-color: #ffe14f;
+    .columns {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      p {
+        font-size: 18px;
+        &.limited-time {
+          background: #ffb700;
+          background-color: #ffb700;
+          font-weight: 700;
+          width: 180px;
+          padding: 3px 0;
+          border-radius: 5px;
+        }
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 48px;
+        padding: 0 120px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .reasons-to-buy {
+    background: white;
+    background-color: white;
+
+    .reason-to-buy {
+      height: 215px;
+      .columns {
+        padding: 0;
+      }
+      .reason-img {
+        height: 188px;
+        height: 188px;
+      }
+      p {
+        hyphens: none;
+      }
+      .reason-heading {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .reason-body {
+        font-size: 18px;
+        line-height: 1.7;
+      }
+    }
   }
 }
 
