@@ -14,3 +14,86 @@ html,
     width: 240px;
   }
 }
+
+.content-area {
+  background: lavender;
+  background-color: lavender;
+  .columns {
+    padding-bottom: 600px;
+  }
+}
+
+.footer {
+  & > tbody > tr > .columns {
+    padding-left: 92px;
+    padding-right: 92px;
+    p {
+      font-size: 14px;
+      hyphens: none;
+
+      &.availability {
+        padding: 0 40px;
+        margin-bottom: 20px;
+      }
+      &.questions {
+        margin-bottom: 25px;
+      }
+      &.availability,
+      &.questions {
+        line-height: 1.5;
+        a {
+          color: #ff6705;
+          font-weight: 700;
+        }
+      }
+    }
+    .horizontal-divider {
+      display: block;
+      width: 170px;
+      height: 2px;
+      background: #e8e8ea;
+      background-color: #e8e8ea;
+      margin-bottom: 25px;
+    }
+    .social-icons {
+      width: 200px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .footer-nav {
+      .columns {
+        padding-bottom: 24px;
+      }
+      a {
+        font-size: 14px;
+        color: black;
+      }
+      .vertical-divider {
+        height: 14px;
+        width: 2px;
+        display: inline-block;
+        background: #e8e8ea;
+        background-color: #e8e8ea;
+        margin: 0 4px;
+        vertical-align: middle;
+      }
+    }
+    .legal-text {
+      .columns {
+        padding-bottom: 32px;
+        p {
+          color: rgb(160, 160, 160);
+          font-size: 12px;
+          line-height: 1.5;
+          margin: 0;
+        }
+        a {
+          color: rgb(160, 160, 160);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
