@@ -4,6 +4,29 @@ html,
   background: #f3f3f3 !important;
 }
 
+/* Small only */
+@media only screen and (max-width: #{$global-breakpoint}) {
+  .header {
+    .columns {
+      padding-top: 24px !important;
+    }
+    .logo {
+      width: 150px !important;
+    }
+  }
+  .content-area {
+    .message {
+      .columns {
+        h1 {
+          line-height: 1;
+          font-size: 40px !important;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
 .header {
   background: #ffe14f;
   background-color: #ffe14f;
@@ -16,9 +39,17 @@ html,
 }
 
 .content-area {
+  .first {
+    &.columns {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      padding-bottom: 0;
+    }
+  }
   .message {
     background: #ffe14f;
     background-color: #ffe14f;
+
     .columns {
       padding-left: 0;
       padding-right: 0;
@@ -37,7 +68,7 @@ html,
       h1 {
         font-weight: 700;
         font-size: 48px;
-        padding: 0 120px;
+        // padding: 0 120px;
         margin-bottom: 16px;
       }
     }
@@ -116,7 +147,7 @@ html,
       }
       a {
         font-size: 14px;
-        color: black;
+        color: $black;
       }
       .vertical-divider {
         height: 14px;
