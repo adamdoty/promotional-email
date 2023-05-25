@@ -63,13 +63,17 @@ html,
           width: 180px;
           padding: 3px 0;
           border-radius: 5px;
+          margin-bottom: 12px;
+        }
+        &.message-body {
+          margin: 0 !important;
         }
       }
       h1 {
         font-weight: 700;
         font-size: 48px;
-        // padding: 0 120px;
-        margin-bottom: 16px;
+        padding: 0 120px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -80,7 +84,7 @@ html,
     .reason-to-buy {
       height: 215px;
       .columns {
-        padding: 0;
+        padding: 0 !important;
       }
       .reason-img {
         height: 188px;
@@ -97,6 +101,8 @@ html,
       .reason-body {
         font-size: 18px;
         line-height: 1.7;
+        padding-right: 16px;
+        // margin-bottom: 0;
       }
     }
   }
@@ -111,7 +117,7 @@ html,
       hyphens: none;
 
       &.availability {
-        padding: 0 40px;
+        padding: 0 32px;
         margin-bottom: 20px;
       }
       &.questions {
@@ -166,7 +172,7 @@ html,
           color: rgb(160, 160, 160);
           font-size: 12px;
           line-height: 1.5;
-          margin: 0;
+          margin: 0 !important;
         }
         a {
           color: rgb(160, 160, 160);
