@@ -15,6 +15,7 @@ A portfolio project showcasing my ability to make promotional html emails.
 ## Observations
 
 - Headspace uses ~650px as their email width. This is slightly higher than the standard 600px.
+- Headspace used no alt text on their images
 
 ## Disclaimer
 

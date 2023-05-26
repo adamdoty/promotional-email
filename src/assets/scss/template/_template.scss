@@ -4,29 +4,7 @@ html,
   background: #f3f3f3 !important;
 }
 
-/* Small only */
-@media only screen and (max-width: #{$global-breakpoint}) {
-  .header {
-    .columns {
-      padding-top: 24px !important;
-    }
-    .logo {
-      width: 150px !important;
-    }
-  }
-  .content-area {
-    .message {
-      .columns {
-        h1 {
-          line-height: 1;
-          font-size: 40px !important;
-          padding: 0 20px;
-        }
-      }
-    }
-  }
-}
-
+/* start: HEADER */
 .header {
   background: #ffe14f;
   background-color: #ffe14f;
@@ -37,7 +15,9 @@ html,
     width: 240px;
   }
 }
+/* end: HEADER */
 
+/* start: EMAIL BODY */
 .content-area {
   .first {
     &.columns {
@@ -72,7 +52,7 @@ html,
       h1 {
         font-weight: 700;
         font-size: 48px;
-        padding: 0 120px;
+        padding: 0 75px;
         margin-bottom: 20px;
       }
     }
@@ -88,10 +68,13 @@ html,
       }
       .reason-img {
         height: 188px;
-        height: 188px;
       }
       p {
         hyphens: none;
+      }
+      // prettier-ignore
+      & > tbody > tr > .columns > table > tbody > tr > th > table > tbody > tr > .last  > table > tbody > tr > th {
+        padding-left: 6px;
       }
       .reason-heading {
         font-size: 24px;
@@ -102,12 +85,13 @@ html,
         font-size: 18px;
         line-height: 1.7;
         padding-right: 16px;
-        // margin-bottom: 0;
       }
     }
   }
 }
+/* end: EMAIL BODY */
 
+/* start: FOOTER */
 .footer {
   & > tbody > tr > .columns {
     padding-left: 92px;
@@ -138,7 +122,7 @@ html,
       height: 2px;
       background: #e8e8ea;
       background-color: #e8e8ea;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
     .social-icons {
       width: 200px;
@@ -182,3 +166,109 @@ html,
     }
   }
 }
+/* end: FOOTER */
+
+/* start: MEDIA QUERIES */
+@media only screen and (max-width: #{$global-breakpoint}) {
+  body,
+  html,
+  .body {
+    background: #fdfbff !important;
+  }
+
+  .header {
+    .columns {
+      padding-top: 24px !important;
+    }
+    .logo {
+      width: 150px !important;
+    }
+  }
+  .content-area {
+    .message {
+      .columns {
+        p {
+          &.message-body {
+            margin: 0 !important;
+          }
+        }
+        h1 {
+          line-height: 1;
+          font-size: 40px !important;
+          width: 250px;
+          padding: 0 20px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+    }
+    .reasons-to-buy {
+      .reason-to-buy {
+        // prettier-ignore
+        & > tbody > tr > th.small-12.large-10.columns > table > tbody > tr > th > table > tbody > tr > th.small-12.large-7.columns.last > table > tbody > tr > th
+        {
+          padding-left: 34px !important;
+          padding-right: 34px !important;
+        }
+        .reason-heading {
+          padding-top: 16px !important;
+          text-align: center !important;
+        }
+        .reason-body {
+          text-align: center !important;
+          padding-right: 0 !important;
+          padding: 0 8px 8px !important;
+        }
+        &.no-stress {
+          .reason-heading {
+            padding: 16px 40px 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    & > tbody > tr > .columns {
+      p {
+        &.availability {
+          padding: 0 24px;
+        }
+        &.questions {
+          padding: 0 36px !important;
+        }
+      }
+      .horizontal-divider {
+        margin-bottom: 18px !important;
+      }
+      .social-icons {
+        .columns {
+          padding-bottom: 8px !important;
+        }
+      }
+      .footer-nav {
+        & > tbody > tr > th > table > tbody > tr > th {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        a {
+          font-size: 11px !important;
+          line-height: 1.8 !important;
+        }
+        .vertical-divider {
+          margin: 0 2px !important;
+        }
+      }
+      .legal-text {
+        th {
+          padding-bottom: 12px !important;
+          p {
+            font-size: 10px !important;
+            padding: 0 2px !important;
+          }
+        }
+      }
+    }
+  }
+}
+/* end: MEDIA QUERIES */
