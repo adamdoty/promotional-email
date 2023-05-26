@@ -4,11 +4,12 @@
 
 A portfolio project showcasing my ability to make promotional html emails.
 
+[desktop](./src/assets/img/email-main.png) and [mobile](./src/assets/img/email-main-mobile.png)
+
 ## Tools Used
 
 - [Foundation for Emails](https://get.foundation/emails/docs/sass-guide.html) (email framework)
 - [Color Picker](https://imagecolorpicker.com/en) (getting correct colors)
-- [Nimbus Screenshot & Screen Video Recorder](https://chrome.google.com/webstore/detail/nimbus-screenshot-screen/bpconcjcammlapcogcnnelfmaeghhagj) (screenshots)
 - [Figma](https://www.figma.com/) (layout breakdown)
 - [Litmus PutsMail](https://putsmail.com/) (testing)
 
